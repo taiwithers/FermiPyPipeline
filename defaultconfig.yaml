@@ -1,0 +1,36 @@
+data:
+  evfile : ft2.lst
+  scfile : sc.lst
+  #  ltcube : ltcube_00.fits
+
+binning:
+
+  roiwidth   : 10.0
+  binsz      : 0.1 
+  binsperdec : 8   
+
+selection:
+
+  emin    : 1000
+  emax    : 100000
+  zmax    : 90
+  evclass : 128
+  evtype  : 3
+  tmin    : 
+  tmax    : 645711362
+  filter  : null
+  target  : 
+
+gtlike:
+
+  edisp : True
+  irfs : 'P8R3_SOURCE_V3'
+  edisp_disable : ['isodiff','galdiff']
+
+model:
+
+  src_radius  : null
+  src_roiwidth : 15.0
+  galdiff  : '/global/project/hpcg1901/fermi/data/background/gll_iem_v07.fits'
+  isodiff  : '/global/project/hpcg1901/fermi/data/background/iso_P8R3_SOURCE_V3_v1.txt'
+  catalogs : ['4FGL']
